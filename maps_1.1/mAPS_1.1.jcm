@@ -1,0 +1,37 @@
+/* 
+    mAPS_2
+    ---------------------------
+
+    JaCaMo Project File
+    
+    This file defines the initial state of the MAS (initial agents, environment, organisation, ....)
+    
+    (see jacamo/doc/jcm.html for more information about what can be defined in this file)
+    
+    JaCaMo <VERSION>
+    <DATE>
+*/
+
+mas mAPS_1.1 {
+	agent driver{
+		instances: 50
+	}
+	agent manager
+	
+	agent spotA: spot.asl {
+		beliefs: spotGroup(a), price(10),trust(500)
+		instances: 15
+	}
+	
+	agent spotB: spot.asl {
+		beliefs: spotGroup(b), price(5),trust(0)
+		instances: 15
+	}
+	
+    // agent source path
+    asl-path: src/agt
+              src/agt/inc
+
+    
+    
+}

@@ -1,0 +1,1 @@
+This is a sample file! After import on Eclipse you can delete it!

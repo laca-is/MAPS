@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+
+<organisational-specification
+    id="maps_holo_org"
+    os-version="0.8"
+
+    xmlns='http://moise.sourceforge.net/os'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='http://moise.sourceforge.net/os
+                        http://moise.sourceforge.net/xml/os.xsd' >
+
+<structural-specification>
+
+<role-definitions>
+	<role id = "r_head"/>
+	<role id = "r_body"/>  
+	<role id="r_observer"/>
+    <role id="r_builder"/>  
+	    <role id="r_manager"> <extends role= "r_head"/> </role>
+	    <role id="r_head_sector"> <extends role= "r_head"/> </role>
+	    <role id="r_body_sector"> <extends role= "r_body"/> </role>
+	    <role id="r_pspace"> <extends role= "r_body"/> </role> 
+	    <role id="r_idriver"/>
+</role-definitions>
+
+<group-specification id="maps_holo_group">
+    <roles>
+        <role id="r_observer" min="1" max="1"/>
+        <role id="r_builder" min="1" max="1"/>
+        <role id="r_manager" min="0" max="1"/>
+        <role id="r_body_sector" min="0" max="9999"/>
+    </roles>
+      
+    <links>
+       <link from="r_builder" to="r_manager" type="authority"  scope="inter-group" bi-dir="false"/>
+       <link from="r_builder" to="r_head_sector" type="authority"  scope="inter-group" bi-dir="false"/>
+       <link from="r_builder" to="r_body_sector" type="authority"  scope="inter-group" bi-dir="false"/>
+       <link from="r_builder" to="r_observer" type="authority"  scope="inter-group" bi-dir="false"/>
+       <link from="r_builder" to="r_pspace" type="authority"  scope="inter-group" bi-dir="false"/>
+       
+       <link from="r_builder" to="r_idriver" type="authority"  scope="inter-group" bi-dir="false"/>
+       
+       
+    </links>
+    
+    <subgroups>
+    	<group-specification id="sectorGroup">
+        	<roles>
+        		<role id="r_idriver"  min="0" max="999999"/>
+            	<role id="r_pspace" min="0" max="999999"/>
+            	<role id="r_head_sector" min="1" max="2"/> 
+            </roles>             
+    		<links>
+		         <link from="r_head_sector" to="r_pspace" type="authority"  scope="intra-group" bi-dir="false"/>
+		         <link from="r_pspace" to="r_head_sector" type="acquaintance"  scope="intra-group" bi-dir="false"/>
+		         <link from="r_pspace" to="r_head_sector" type="communication"  scope="intra-group" bi-dir="false"/>		       
+		    </links>
+            
+            
+		</group-specification>    
+    </subgroups>
+  
+    <!-- <formation-constraints>
+        <compatibility from="role1" to="role2" /> 
+    </formation-constraints> -->
+</group-specification>
+
+</structural-specification>
+
+<functional-specification>
+    <scheme id= "build_scheme">            
+        <goal id = "setupSystem">        
+        	<plan operator = "sequence">        		        
+        		<goal id = "buildSystem">        
+            		<plan operator="sequence">
+            		    <goal id ="setupWorkspaces"/>        			
+                		<goal id ="setupArtifacts"/>
+                		<goal id ="setupAgents">
+                			<plan operator = "sequence">
+                				<goal id ="setupObserver"/>
+                				<goal id ="setupManager"/>
+                				<goal id ="setupSectors"/>
+                				<goal id ="setupPSpaces"/>	
+                			</plan>
+                		</goal>
+            		</plan>
+        		</goal>        		
+        		<goal id ="startSystem"> 
+        			<plan operator="parallel">
+        				<goal id ="checkRequests"/>
+        				<goal id ="observeAgents"/>     
+        			</plan>
+   				</goal>        		
+        	</plan>
+        </goal>
+        
+        <mission id="m_build" min="1" max="1">
+        	<goal id="setupWorkspaces"/>
+        	<goal id="setupArtifacts"/>
+        	<goal id ="setupObserver"/>
+            <goal id ="setupManager"/>
+             <goal id ="setupSectors"/>
+             <goal id ="setupPSpaces"/>	
+        </mission>
+        
+        <mission id="m_start" min="1">
+        	<goal id="checkRequests"/>        	
+        </mission>
+        
+        <mission id="m_observe" min="1">
+        	<goal id="observeAgents"/>
+        </mission>        
+    </scheme>
+    
+    <scheme id= "psFail_scheme">            
+        <goal id = "restabilishPS">        
+        	<plan operator = "sequence">        		        
+        		<goal id = "setPSParent"/>
+        		<goal id ="notifyPSParent"/>   				        		
+        	</plan>
+        </goal>
+                
+        <mission id="m_psFail" min="0">
+        	<goal id="setPSParent"/>
+        	<goal id="notifyPSParent"/>            
+        </mission>        
+   </scheme>
+   
+     <scheme id= "sectorFail_scheme">            
+        <goal id = "restabilishSector">        
+        	<plan operator = "sequence">        		        
+        		<goal id = "notifyObserver"/>
+        		<goal id ="notifySectorPS"/>   				        		
+        	</plan>
+        </goal>
+                
+        <mission id="m_notifyObserver" min="0">
+        	<goal id="notifyObserver"/>            
+        </mission>
+        
+        <mission id="m_notifySectorPS" min="0">
+        	<goal id="notifySectorPS"/>            
+        </mission>        
+   </scheme>
+    
+   
+    
+</functional-specification>
+
+<normative-specification>
+    <norm id="n_build" type="obligation" role="r_builder" mission="m_build"/>
+    <norm id="n_start" type="obligation" role="r_observer" mission="m_start"/>
+    <norm id="n_observe" type="obligation" role="r_observer" mission="m_observe"/>
+    <norm id="n_psFailHead" type="permission" role="r_head_sector" mission="m_psFail"/>
+    <norm id="n_psFailBody" type="permission" role="r_body_sector" mission="m_psFail"/>
+</normative-specification>
+
+
+</organisational-specification>
