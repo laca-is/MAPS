@@ -1,9 +1,9 @@
-Initial README! - Informations coming soon!
+Very first README! - More details to be added
 
-MAPS - Multiagent Parking System
+MAPS - Multi-Agent Parking System
 
 ::Description::
-It is a project developed through JaCaMo Framework which aims to provide multiagent solutions to smart parkings.
+It is a research project developed through JaCaMo Framework which aims to build an agent-based solution to a Smart Parking.
 
 
 ::Requeriments::
@@ -32,7 +32,7 @@ Lucas Castro - l.castropg@gmail.com - lcastropg.github.io (MAPS 1.0, 1.1, and 2.
 Alexis - (MAPS-SUMO)
 Wesley Ramos- wesleyramos@gmail.com (MAPS-NORMS)
 
-::Advising::
+::Professors::
 
 Gleifer Vaz Alves - gleifer@utfpr.edu.br
 André Pinz Borges - apborges@utfpr.edu.br
