@@ -28,7 +28,7 @@ It is a research project developed through JaCaMo Framework which aims to build 
 
 ::Developers::
 
-Lucas Castro - l.castropg@gmail.com - lcastropg.github.io (MAPS 1.0, 1.1, and 2.0) 
+Lucas Castro - l.castropg@gmail.com - lcastropg.github.io (MAPS 1.0, 1.1, 2.0, and MAPS-SUMO-IOT) 
 Alexis - (MAPS-SUMO)
 Wesley Ramos- wesleyramos@gmail.com (MAPS-NORMS)
 
