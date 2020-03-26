@@ -1,0 +1,17 @@
+<routes>
+<route id="route0" edges="gneE10 gneE14"/>
+<route id="route1" edges="gneE10 gneE14 -gneE14"/>
+
+    <vehicle id="v0" depart="10" route="route0">
+        <stop parkingArea="pa0" duration="200"/>
+    </vehicle>
+    <vehicle id="v1" depart="30" route="route0">
+        <stop parkingArea="pa1" duration="180"/>
+    </vehicle>
+    <vehicle id="v2" depart="40" route="route0">
+        <stop parkingArea="pa2" duration="220"/>
+    </vehicle>
+    <vehicle id="v3" depart="75" route="route0">
+        <stop parkingArea="pa3" duration="240"/>	
+    </vehicle>
+</routes>

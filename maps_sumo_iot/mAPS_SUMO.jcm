@@ -1,0 +1,131 @@
+/*
+    mAPS_SUMO
+    ---------------------------
+
+    JaCaMo Project File
+
+    This file defines the initial state of the MAS (initial agents, environment, organisation, ....)
+
+    (see jacamo/doc/jcm.html for more information about what can be defined in this file)
+
+    JaCaMo <VERSION>
+    <DATE>
+*/
+
+mas mAPS_SUMO {
+
+    agent builder
+    agent driver : driver.asl{
+    	instances: 2
+    } 
+    
+    agent pspace_0 : pspace.asl {
+    	beliefs: price(6),    	
+    			 maxTime(60)
+    			 position(10.1)
+    			 edge("gneE14")
+    }
+    
+    agent pspace_1 : pspace.asl {
+    	beliefs: price(5.5),    	
+    			 maxTime(70),
+    			 position(20.1),
+    			 edge("gneE14")
+    }
+    
+    agent pspace_2 : pspace.asl {
+    	beliefs: price(5),    	
+    			 maxTime(80),
+    			 position(30.2),
+    			 edge("gneE14")
+    }
+    
+//    agent pspace_3 : pspace.asl {
+//    	beliefs: price(4),    	
+//    			 maxTime(120),
+//    			 position(32.4),
+//    			 edge("gneE14")
+//    }
+//    
+//    agent pspace_4 : pspace.asl {
+//    	beliefs: price(4),    	
+//    			 maxTime(120),
+//    			 position(42.6),
+//    			 edge("gneE14")
+//    }
+//    
+//    agent pspace_5 : pspace.asl {
+//    	beliefs: price(4),    	
+//    			 maxTime(180),
+//    			 position(51.8),
+//    			 edge("gneE14")
+//    }
+//    
+//    agent pspace_6 : pspace.asl {
+//    	beliefs: price(4),    	
+//    			 maxTime(180),
+//    			 position(61.9),
+//    			 edge("gneE14")
+//    }
+//    
+//    agent pspace_7 : pspace.asl {
+//    	beliefs: price(3.5),    	
+//    			 maxTime(180),
+//    			 position(72.1),
+//    			 edge("gneE14")
+//    }
+//    
+//    agent pspace_8 : pspace.asl {
+//    	beliefs: price(3.5),    	
+//    			 maxTime(180),
+//    			 position(3.1),
+//    			 edge("-gneE14")
+//    }
+//    
+//    agent pspace_9 : pspace.asl {
+//    	beliefs: price(4),    	
+//    			 maxTime(120),
+//    			 position(13.7),
+//    			 edge("-gneE14")
+//    }
+//    
+//    agent pspace_10 : pspace.asl {
+//    	beliefs: price(4),    	
+//    			 maxTime(120),
+//    			 position(24.7),
+//    			 edge("-gneE14")
+//    }
+//    
+//    agent pspace_11 : pspace.asl {
+//    	beliefs: price(4.5),    	
+//    			 maxTime(120),
+//    			 position(34.9),
+//    			 edge("-gneE14")
+//    }
+//    
+//    agent pspace_12 : pspace.asl {
+//    	beliefs: price(5),    	
+//    			 maxTime(120),
+//    			 position(44.9),
+//    			 edge("-gneE14")
+//    }
+//    
+//    agent pspace_13 : pspace.asl {
+//    	beliefs: price(5.5),    	
+//    			 maxTime(80),
+//    			 position(55.7),
+//    			 edge("-gneE14")
+//    }
+//    
+//    agent pspace_14 : pspace.asl {
+//    	beliefs: price(6),    	
+//    			 maxTime(120),
+//    			 position(66.4),
+//    			 edge("-gneE14")
+//    }
+    
+    
+    
+    
+}
+

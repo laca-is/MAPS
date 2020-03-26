@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="52" failures="0" name="it.polito.appeal.traci.test.TraCITest" time="29.541" errors="0" skipped="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="F:\Programas\Java\jdk1.8.0_60\jre\bin"/>
+    <property name="java.vm.version" value="25.60-b23"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\alexi\Documents\TCC\TCC_2\TraCI4J-master"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="F:\Programas\Java\jdk1.8.0_60\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\alexi\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="F:\Programas\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="F:\Programas\NetBeans 8.0.2\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="F:\Programas\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MATLAB\R2015b\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;F:\Programas\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;F:\Programas\DLR\Sumo\bin\;&quot;C:\Users\alexi\Documents\Visual Studio 2015&quot;;C:\Program Files\dotnet\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\drivers\mysql-connector-java-5.0.8\mysql-connector-java-5.0.8-bin.jar;C:\Users\alexi\Documents\TCC\sumo\sumo-0.25.0\bin;F:\Programas\.lein\bin;&quot;C:\Users\alexi\Documents\Visual Studio 2015&quot;;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\alexi"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="alexi"/>
+    <property name="java.class.path" value="F:\Programas\NetBeans 8.0.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="F:\Programas\Java\jdk1.8.0_60\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=F:\Programas\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="F:\Programas\Java\jdk1.8.0_60\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="F:\Programas\Java\jdk1.8.0_60\jre\lib\resources.jar;F:\Programas\Java\jdk1.8.0_60\jre\lib\rt.jar;F:\Programas\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar;F:\Programas\Java\jdk1.8.0_60\jre\lib\jsse.jar;F:\Programas\Java\jdk1.8.0_60\jre\lib\jce.jar;F:\Programas\Java\jdk1.8.0_60\jre\lib\charsets.jar;F:\Programas\Java\jdk1.8.0_60\jre\lib\jfr.jar;F:\Programas\Java\jdk1.8.0_60\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="F:\Programas\NetBeans 8.0.2\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testRefreshedValues" time="0.548"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testVehicleSet" time="0.571"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testLaArDetectorIsDetecting" time="0.627"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testGetBelongingEdge" time="0.58"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="test500msStep" time="1.133"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testVehicleIDAtStepOne" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testVehicleGetLaneID" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testVehiclePositionAtStepOne" time="0.568"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testVehiclePositionAtStepTwo" time="0.569"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testFirstStepIsZero" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testGetLaneMaxSpeed" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testSetPOIColor" time="0.621"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testPOIType" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testMultiQueryPerformance" time="0.68"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testGetRoads" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testGetShape" time="0.568"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testChangeTargetAlsoAffectsRouteList" time="0.568"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testGetSubscriptionResponses" time="0.576"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testRouteGetEdges" time="0.57"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testOneVehicleAtStepOne" time="0.566"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testLaArExistence" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testRoute" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testMeMeDetectorIsDetecting" time="0.588"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testVehicleGetLaneIndex" time="0.576"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testRemoveVehicle" time="0.569"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testPOIPosition" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testInLoExistence" time="0.569"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testAddRoute" time="0.568"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testLaneDimensions" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testInLoGetPosition" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testSetPOIPosition" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testNoVehiclesAtStepZero" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testSetPOIType" time="0.565"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testChangeTarget" time="0.611"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testGetBounds" time="0.566"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testChangeGlobalTravelTime" time="0.571"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testWhoDepartsArrives" time="0.654"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testInLoGetLane" time="0.569"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testMeMeExistence" time="0.576"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testVehiclePositionIsInBounds" time="0.612"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testAddVehicle" time="0.601"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testVehicleTypLength" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testPOIExistence" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testUsingInactiveVehicle" time="0.669"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testNextSimStepGoesToOne" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testInductionLoopIsDetecting" time="0.584"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testPOIColor" time="0.569"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testChangeRoute" time="0.567"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testLaArGetPosition" time="0.567">
+    <skipped/>
+  </testcase>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testLaneLinks" time="0.569"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testRerouting" time="0.568"/>
+  <testcase classname="it.polito.appeal.traci.test.TraCITest" name="testLaArGetLane" time="0.568">
+    <skipped/>
+  </testcase>
+</testsuite>

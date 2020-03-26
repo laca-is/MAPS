@@ -1,0 +1,12 @@
+<configuration>
+	<input>
+		<additional-files value="unicamp_additionals.xml"/>
+		<net-file value = "unicamp_test.net.xml"/>
+		<route-files value = "unicamp.rou.xml"/>
+	</input>	
+	<time>
+		<begin value = "0"/>
+		<end value = "200000"/>
+	</time>
+
+</configuration>

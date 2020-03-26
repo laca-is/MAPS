@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue 11 Jun 2019 11:46:36 AM -03 by Eclipse SUMO netedit Version 1.1.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="unicamp.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="unicamp.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<additional>   
+    <parkingArea id="parking_1" lane="gneE14_0" friendlyPos="0" roadsideCapacity="1" angle="90.00" startPos="1.07" endPos="10.81"/>
+    <parkingArea id="pa1" lane="gneE14_0" friendlyPos="0" roadsideCapacity="1" angle="90.00" startPos="11.06" endPos="21.06"/>
+    <parkingArea id="pa10" lane="-gneE14_0" friendlyPos="0" roadsideCapacity="1" angle="90.00" startPos="24.64" endPos="34.64"/>
+    <parkingArea id="pa11" lane="-gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="34.90" endPos="44.90"/>
+    <parkingArea id="pa12" lane="-gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="44.96" endPos="54.96"/>
+    <parkingArea id="pa13" lane="-gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="55.70" endPos="65.70"/>
+    <parkingArea id="pa14" lane="-gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="66.39" endPos="76.39"/>
+    <parkingArea id="pa2" lane="gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="21.26" endPos="31.26"/>
+    <parkingArea id="pa3" lane="gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="31.36" endPos="41.36"/>
+    <parkingArea id="pa4" lane="gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="41.48" endPos="51.48"/>
+    <parkingArea id="pa5" lane="gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="51.67" endPos="61.67"/>
+    <parkingArea id="pa6" lane="gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="61.94" endPos="71.94"/>
+    <parkingArea id="pa7" lane="gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="72.06" endPos="82.06"/>
+    <parkingArea id="pa8" lane="-gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="2.96" endPos="12.96"/>
+    <parkingArea id="pa9" lane="-gneE14_0" friendlyPos="1" roadsideCapacity="1" angle="90.00" startPos="13.73" endPos="23.73"/>
+</additional>

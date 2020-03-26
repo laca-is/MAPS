@@ -1,0 +1,6 @@
+<routes>
+	<route id="route0" edges="gneE14"/>
+	<route id="route1" edges="gneE10 gneE14 -gneE14"/> 
+	<route id="route2" edges="gneE14 -gneE14 -gneE10 gneE12"/> 
+  
+</routes>
